@@ -1,0 +1,10 @@
+<section class="reddits">
+  <h2>Reddit Listing</h2>
+  <!-- <div>
+    <app-list-item ></app-list-item>
+  </div> -->
+ 
+    <app-list-item
+       *ngFor="let reddit of redditService.reddits" [reddit]="reddit"></app-list-item>
+     
+</section>
